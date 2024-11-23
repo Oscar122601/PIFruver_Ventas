@@ -1,0 +1,271 @@
+body {
+  background-color: #f8f9fa;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h3 {
+  font-weight: bold;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.list-group-item:hover {
+  background-color: #c3e6cb; /* Verde más claro para el hover */
+  transition: background-color 0.3s ease;
+}
+
+button {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #28a745;
+  transform: scale(1.05);
+}
+
+input {
+  border-radius: 0.375rem;
+  font-size: 1.1rem;
+  border: 2px solid #28a745;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.2);
+}
+
+input:focus {
+  border-color: #218838;
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.4);
+}
+
+/* Para el precio total */
+.text-success {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* Estilos para el Navbar */
+.navbar {
+  background-color: #2e8b57; /* Color verde */
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; /* Asegurarse que ocupe el 100% de la anchura */
+  position: fixed; /* Fijar el navbar en la parte superior */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Asegurarse que se quede encima de otros elementos */
+}
+
+/* Asegurar que el body no se oculte detrás del navbar */
+body {
+  margin-top: 80px; /* Ajuste para que no quede oculto detrás del navbar fijo */
+}
+
+/* Estilo del logo en el navbar */
+.navbar-brand img {
+  width: 160px !important; /* Tamaño del logo */
+  background-color: white; /* Fondo blanco */
+  padding: 5px; /* Añadir espacio alrededor del logo */
+  border-radius: 5px;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #c2f0c2; /* Un verde claro en hover */
+}
+
+/* Botones de Configuración y Salir */
+.navbar-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-buttons button {
+  background-color: #d3e0d3; /* Fondo gris claro */
+  color: #333;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar-buttons button:hover {
+  background-color: #a5c5a5; /* Color más oscuro al pasar el mouse */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar-buttons {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+/* Estilos generales del footer */
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 0; /* Reducir padding superior e inferior */
+  font-family: 'Arial', sans-serif;
+  margin-top: auto; /* Esto empuja el footer hacia abajo */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px; /* Reducido el padding interno */
+}
+
+.footer-section {
+  flex: 1;
+  padding: 10px; /* Reducido padding */
+}
+
+.footer-section h3 {
+  color: #f0f0f0;
+  margin-bottom: 8px; /* Menor margen */
+  font-size: 16px; /* Fuente más pequeña */
+}
+
+.footer-section p {
+  color: #dcdcdc;
+  font-size: 12px; /* Fuente más pequeña */
+}
+
+.footer-section a {
+  color: #f0f0f0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #3498db;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 6px 0; /* Menor margen */
+}
+
+.footer-section input[type="email"] {
+  padding: 8px; /* Menor padding */
+  margin-right: 8px; 
+  border: none;
+  border-radius: 4px; /* Radio de borde más pequeño */
+  font-size: 12px; /* Fuente más pequeña */
+}
+
+.footer-section button {
+  padding: 8px 15px; /* Menor padding */
+  background-color: #3498db;
+  border: none;
+  border-radius: 4px; /* Radio de borde más pequeño */
+  color: white;
+  cursor: pointer;
+  font-size: 12px; /* Fuente más pequeña */
+}
+
+.footer-section button:hover {
+  background-color: #2980b9;
+}
+
+.footer .social-links a {
+  margin: 0 8px; /* Menor margen */
+  font-size: 16px; /* Íconos más pequeños */
+  color: #f0f0f0;
+  transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  color: #3498db;
+}
+
+/* Estilos para el footer inferior */
+.footer-bottom {
+  background-color: #34495e;
+  text-align: center;
+  padding: 10px 0; /* Menor padding */
+  font-size: 12px; /* Fuente más pequeña */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .footer-section input[type="email"] {
+    width: 80%;
+  }
+
+  .footer-section button {
+    width: 80%;
+  }
+}
+
+/* Estilo para el botón de "Volver a la lista" */
+.btn-volver-lista {
+  margin-bottom: 20px; /* Añadir espacio debajo del botón */
+}
+
+/* Aseguramos que el body ocupe todo el alto disponible */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal para que se expanda y ocupe todo el espacio disponible */
+.main-content {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* El footer debe estar al final */
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 0;
+  font-family: 'Arial', sans-serif;
+  margin-top: auto; /* Esto empuja el footer hacia abajo */
+}
+
+.footer-bottom {
+  background-color: #34495e;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 12px;
+}

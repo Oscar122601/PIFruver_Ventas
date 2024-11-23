@@ -1,0 +1,32 @@
+body {
+  background: linear-gradient(to bottom right, #f0f9ff, #cfe7e9);
+  font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.card {
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.list-group-item {
+  font-size: 16px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.list-group-item:hover {
+  background-color: #e8f5e9;
+  transform: scale(1.02);
+  font-weight: bold;
+}
+
+.btn {
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
